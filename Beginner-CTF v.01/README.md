@@ -97,6 +97,22 @@ To change the user agent :
 
 ### Q7) <ins>Which was the application to view the link (not the QR) ?</ins>
 ### Ans: google maps
+When we open the site we see a donwload buttom and a instruction where we can download a file. 
+![image](https://user-images.githubusercontent.com/68239030/216278271-969c75ae-8762-4c5e-8c80-180fb44bb6fb.png) 
+when we unzip the file we cannot see anything because its a hidden file and need to use the following command to view the content.
+>ls
+>
+>unzip -Z cant_fine_me.zip
+>
+>ls -la
+>
+>mv .hidden.txt hidden.jpg
+
+![image](https://user-images.githubusercontent.com/68239030/216279810-5d98e530-ba20-426a-bde4-89596ba269c9.png)
+Which if scanned leads us to : https://maps.app.goo.gl/6V6n8RKnHrVnYqaS8?g_st=iv
+This show this image on **Google Maps** : ![image](https://user-images.githubusercontent.com/68239030/216280294-56346ee9-e820-4325-844f-827e423ce3d9.png)
+Then a QR is show where the text is "The next location is /glocation"
+
 
 >https://swapnilshrestha.com.np/5/htmlcomment/steg/welldone/sherlock101/james_bond/glocation
 
