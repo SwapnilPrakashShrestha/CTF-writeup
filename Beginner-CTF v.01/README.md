@@ -9,7 +9,7 @@ For those who want to play the CTF , challenges are still available at:
 and question are avilabel at https://tryhackme.com/room/ctf2023
 
 ### Solution starts here!
-### Q1) Which was the First correct Directory?
+### Q1)<ins> Which was the First correct Directory?</ins>
 ### Ans: 5
 When we fisrt open the site we are welcomed with the page which tells us to go the the final door in the hallway. When we hover over the door Md5 hash is shown.
 ![image](https://user-images.githubusercontent.com/68239030/216240521-4306aa4e-9a4c-482f-b35f-79376d4e3a5a.png)
@@ -23,7 +23,7 @@ Telling us that its a md5hash and the door its has a hash of 5 when checking it 
 So the next directory of the CTF is:
 > https://swapnilshrestha.com.np/5
 
-### Q2) Did you get the next directory?
+### Q2) <ins>Did you get the next directory?</ins>
 ### Ans: htmlcomment
 For the next part we see the following : 
 ![image](https://user-images.githubusercontent.com/68239030/216241429-2149372b-800d-4af8-98db-2bc58d802675.png)
@@ -32,7 +32,7 @@ When we inspect (ctrl + u) the page we can see that the next directory is /htmlc
 ![image](https://user-images.githubusercontent.com/68239030/216241612-03b70b95-3d99-47cc-8456-29a8415eff38.png)
 >https://swapnilshrestha.com.np/5/htmlcomment
 
-### Q3) The next Path was.
+### Q3) <ins>The next Path was.</ins>
 ### Ans: steg
 
 The next page gives us a image and is about steganography. After downloading the image we can use **steghide** to extract hidden text file in the image with passphrase as blank(given in css comments). 
@@ -49,7 +49,7 @@ The next page gives us a image and is about steganography. After downloading the
 Spits out: The next dierctory is **/steg**
 
 
-### Q4) After Steg the path was.
+### Q4) <ins>After Steg the path was.</ins>
 ### Ans: welldone
 We again see same two images in the next directory so i guess its more seganography. Though to download the files we cannot use download button. 
 First we need to inspect the page and then download it.
@@ -60,7 +60,7 @@ Therefore the next directory is :
 >https://swapnilshrestha.com.np/5/htmlcomment/welldone
 
 
-### Q5) Which tool did you use to find the user?
+### Q5)<ins> Which tool did you use to find the user?</ins>
 ### Ans: Sherlock
 
 ![image](https://user-images.githubusercontent.com/68239030/216248038-9418c7fa-955d-459f-ae74-2e43fe8187b0.png)
@@ -78,7 +78,7 @@ This username is again entered in sherlock and a list is shown in which **Houzz*
 There is a ideabook called flag and the next directory is **sherlock101**
 >https://swapnilshrestha.com.np/5/htmlcomment/steg/welldone/sherlock101
 
-### Q6) What did you change to go the the directory /james_bond ?
+### Q6)<ins> What did you change to go the the directory /james_bond ?</ins>
 ### Ans: user-agent
 
 ![image](https://user-images.githubusercontent.com/68239030/216251143-7dc4c056-4c09-481e-a42c-4e5a6103c3ce.png)
@@ -95,12 +95,12 @@ To change the user agent :
 5)Enter the url with costum user-agent : https://swapnilshrestha.com.np/5/htmlcomment/steg/welldone/sherlock101/james_bond
 
 
-### Q7) Which was the application to view the link (not the QR) ?
+### Q7) <ins>Which was the application to view the link (not the QR) ?</ins>
 ### Ans: google maps
 
 >https://swapnilshrestha.com.np/5/htmlcomment/steg/welldone/sherlock101/james_bond/glocation
 
-### Q8) What was the passphrase of the website? 
+### Q8)<ins> What was the passphrase of the website? </ins>
 ### Ans: client-site is fun
 We see the next phase of the CTF as a Client-Side Authentication.
 ![image](https://user-images.githubusercontent.com/68239030/216253489-029f7332-cef5-4237-989d-6c2269dba35d.png)
@@ -113,7 +113,7 @@ When we inspect the page we can see that the browser is verifying the authentact
 ![image](https://user-images.githubusercontent.com/68239030/216258456-86f582fc-f790-4eca-be1f-682a22bbb12a.png)
 
 
-### Q9)  What was the name of the file where you found first half of the next directory?
+### Q9)<ins>  What was the name of the file where you found first half of the next directory?</ins>
 ### Ans: robots.txt
 ![image](https://user-images.githubusercontent.com/68239030/216258952-eee16d63-c1b9-4036-9b5a-fb4e8010e73d.png)
 
@@ -121,10 +121,10 @@ If we click on the icon we go the [Site](https://www.youtube.com/watch?v=dQw4w9W
 Its a page where its talks about **robots.txt** and going to the robots file of the page leads to first half of the final directory: 
 ![image](https://user-images.githubusercontent.com/68239030/216259798-b7c68b4f-a6c3-4499-bee8-dfdfc0762399.png)
 
-### Q10)  The final directory was?
+### Q10) <ins> The final directory was?</ins>
 ### Ans: robots_and_caesar_cipher
 
 The first part of the final directory was found in Question 9 and for the last part we need to rotate **gtj_igkygx_iovnkx** on [caesar cipher](https://www.dcode.fr/caesar-cipher) and we get the final part of the directory "and_caesar_cipher".
-so the final directory is: [Here](https://swapnilshrestha.com.np/5/htmlcomment/steg/welldone/sherlock101/james_bond/glocation/client-site_is_fun/robots_and_caesar_cipher)
+so the completer final directory is: [Here](https://swapnilshrestha.com.np/5/htmlcomment/steg/welldone/sherlock101/james_bond/glocation/client-site_is_fun/robots_and_caesar_cipher)
 ![image](https://user-images.githubusercontent.com/68239030/216261104-76417e76-e3d4-48d2-9e1b-25e0ccdd34fc.png)
 
