@@ -47,3 +47,28 @@ The next page gives us a image and is about steganography. After downloading the
 
 
 Spits out: The next dierctory is **/steg**
+
+
+### Q4) After Steg the path was.
+### Ans: welldone
+We again see same two images in the next directory so i guess its more seganography. Though to download the files we cannot use download button. 
+First we need to inspect the page and then download it.
+1.jpeg is just to waste the time and nothing can be found under it and when running **exiftool** in the 2.jpeg we find the following outcome.
+![image](https://user-images.githubusercontent.com/68239030/216247515-0103de39-949d-40f2-9cbb-899e4cc86e76.png)
+
+Therefore the next directory is :
+>https://swapnilshrestha.com.np/5/htmlcomment/welldone
+
+
+### Q5) Which tool did you use to find the user?
+### Ans: Sherlock
+
+![image](https://user-images.githubusercontent.com/68239030/216248038-9418c7fa-955d-459f-ae74-2e43fe8187b0.png)
+According to the picture we need to find where username **NakaliShrestha1** is? 
+Using **sherlock** we can find the social media to that username
+>sherlock NakaliShrestha1
+
+We see different social site in which **twitter** is the what we are after.
+![image](https://user-images.githubusercontent.com/68239030/216248994-57dc327f-0ade-4608-aa08-2ede62e863d8.png)
+There is a random text i.e  c2hyZXN0aGExMjM0NW5ha2FsaQ==  , When enterd in [CyberChef](https://gchq.github.io/CyberChef/) spits out **shrestha12345nakali**.
+This username is again 
