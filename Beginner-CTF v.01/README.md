@@ -6,7 +6,8 @@
 
 For those who want to play the CTF , challenges are still available at:
 ### https://swapnilshrestha.com.np
-and question are avilabel at https://tryhackme.com/room/ctf2023
+and question are avilabel at
+https://tryhackme.com/room/ctf2023
 
 ### Solution starts here!
 ### Q1)<ins> Which was the First correct Directory?</ins>
@@ -29,7 +30,10 @@ For the next part we see the following :
 ![image](https://user-images.githubusercontent.com/68239030/216241429-2149372b-800d-4af8-98db-2bc58d802675.png)
 
 When we inspect (ctrl + u) the page we can see that the next directory is /htmlcomment which is commented out.
+
+
 ![image](https://user-images.githubusercontent.com/68239030/216241612-03b70b95-3d99-47cc-8456-29a8415eff38.png)
+
 >https://swapnilshrestha.com.np/5/htmlcomment
 
 ### Q3) <ins>The next Path was.</ins>
@@ -64,18 +68,25 @@ Therefore the next directory is :
 ### Ans: Sherlock
 
 ![image](https://user-images.githubusercontent.com/68239030/216248038-9418c7fa-955d-459f-ae74-2e43fe8187b0.png)
+
 According to the picture we need to find where username **NakaliShrestha1** is? 
 Using **sherlock** we can find the social media to that username
+
 >sherlock NakaliShrestha1
 
 We see different social site in which **twitter** is the what we are after.
 ![image](https://user-images.githubusercontent.com/68239030/216248994-57dc327f-0ade-4608-aa08-2ede62e863d8.png)
 
+
+
 There is a random text i.e  **c2hyZXN0aGExMjM0NW5ha2FsaQ==**  , When enterd in [CyberChef](https://gchq.github.io/CyberChef/) spits out **shrestha12345nakali**.
 This username is again entered in sherlock and a list is shown in which **Houzz** is only valid.
+
+
 ![image](https://user-images.githubusercontent.com/68239030/216250230-e3387621-c9e2-45e6-acb3-dd8bde2344d2.png)
 
 There is a ideabook called flag and the next directory is **sherlock101**
+
 >https://swapnilshrestha.com.np/5/htmlcomment/steg/welldone/sherlock101
 
 ### Q6)<ins> What did you change to go the the directory /james_bond ?</ins>
@@ -99,7 +110,8 @@ To change the user agent :
 ### Ans: google maps
 When we open the site we see a donwload buttom and a instruction where we can download a file. 
 ![image](https://user-images.githubusercontent.com/68239030/216278271-969c75ae-8762-4c5e-8c80-180fb44bb6fb.png) 
-when we unzip the file we cannot see anything because its a hidden file and need to use the following command to view the content.
+
+when we unzip the file we cannot see anything because its a hidden file and need to use the following command to view the content:
 >ls
 >
 >unzip -Z cant_fine_me.zip
@@ -111,22 +123,24 @@ when we unzip the file we cannot see anything because its a hidden file and need
 ![image](https://user-images.githubusercontent.com/68239030/216279810-5d98e530-ba20-426a-bde4-89596ba269c9.png)
 Which if scanned leads us to : https://maps.app.goo.gl/6V6n8RKnHrVnYqaS8?g_st=iv
 This show this image on **Google Maps** : ![image](https://user-images.githubusercontent.com/68239030/216280294-56346ee9-e820-4325-844f-827e423ce3d9.png)
-Then a QR is show where the text is "The next location is /glocation"
+
+Then a QR is show where the text is "The next Directory is /glocation"
 
 
 >https://swapnilshrestha.com.np/5/htmlcomment/steg/welldone/sherlock101/james_bond/glocation
 
 ### Q8)<ins> What was the passphrase of the website? </ins>
 ### Ans: client-site is fun
-We see the next phase of the CTF as a Client-Side Authentication.
+We see the next phase of the CTF as a Client-Side Authentication as per the image.
+
 ![image](https://user-images.githubusercontent.com/68239030/216253489-029f7332-cef5-4237-989d-6c2269dba35d.png)
 
-When we try to login with a random password we see the username is **admin**. ![image](https://user-images.githubusercontent.com/68239030/216253694-dc8475e8-7a78-4739-997c-768756aae450.png)
+When we try to login with a random password we see the username is **admin**. 
+![image](https://user-images.githubusercontent.com/68239030/216253694-dc8475e8-7a78-4739-997c-768756aae450.png)
 
-but username: admin password: admin doesnt work. 
-When we inspect the page we can see that the browser is verifying the authentaction process and its using user's entered password with **Y2xpZW50LXNpdGUgaXMgZnVu** to check it
-**Y2xpZW50LXNpdGUgaXMgZnVu**  When enterd in [CyberChef](https://gchq.github.io/CyberChef/) spits out **client-site is fun**
-![image](https://user-images.githubusercontent.com/68239030/216258456-86f582fc-f790-4eca-be1f-682a22bbb12a.png)
+Nerverless ***username: admin and  password: admin*** doesnt work. 
+When we inspect the page we can see that the browser is verifying the authentaction process and its using user's entered password with **Y2xpZW50LXNpdGUgaXMgZnVu** to check it.
+**Y2xpZW50LXNpdGUgaXMgZnVu**,  When enterd in [CyberChef](https://gchq.github.io/CyberChef/) spits out **client-site is fun**
 
 
 ### Q9)<ins>  What was the name of the file where you found first half of the next directory?</ins>
