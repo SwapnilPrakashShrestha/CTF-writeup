@@ -140,7 +140,7 @@ When we try to login with a random password we see the username is **admin**.
 
 Nerverless ***username: admin and  password: admin*** doesnt work. 
 When we inspect the page we can see that the browser is verifying the authentaction process and its using user's entered password with **Y2xpZW50LXNpdGUgaXMgZnVu** to check it.
-**Y2xpZW50LXNpdGUgaXMgZnVu**,  When enterd in [CyberChef](https://gchq.github.io/CyberChef/) spits out **client-site is fun**
+**Y2xpZW50LXNpdGUgaXMgZnVu**,  When enterd in [CyberChef](https://gchq.github.io/CyberChef/) spits out "**client-site is fun**" which is the next directory.
 
 
 ### Q9)<ins>  What was the name of the file where you found first half of the next directory?</ins>
@@ -148,7 +148,10 @@ When we inspect the page we can see that the browser is verifying the authentact
 ![image](https://user-images.githubusercontent.com/68239030/216258952-eee16d63-c1b9-4036-9b5a-fb4e8010e73d.png)
 
 If we click on the icon we go the [Site](https://www.youtube.com/watch?v=dQw4w9WgXcQ) and get Rickrolled!
+
 Its a page where its talks about **robots.txt** and going to the robots file of the page leads to first half of the final directory: 
+![image](https://user-images.githubusercontent.com/68239030/216283717-587547ae-4e33-4a7d-99ab-2fd3dcfc928f.png)
+
 ![image](https://user-images.githubusercontent.com/68239030/216259798-b7c68b4f-a6c3-4499-bee8-dfdfc0762399.png)
 
 ### Q10) <ins> The final directory was?</ins>
@@ -157,4 +160,8 @@ Its a page where its talks about **robots.txt** and going to the robots file of 
 The first part of the final directory was found in Question 9 and for the last part we need to rotate **gtj_igkygx_iovnkx** on [caesar cipher](https://www.dcode.fr/caesar-cipher) and we get the final part of the directory "and_caesar_cipher".
 so the completer final directory is: [Here](https://swapnilshrestha.com.np/5/htmlcomment/steg/welldone/sherlock101/james_bond/glocation/client-site_is_fun/robots_and_caesar_cipher)
 ![image](https://user-images.githubusercontent.com/68239030/216261104-76417e76-e3d4-48d2-9e1b-25e0ccdd34fc.png)
+
+
+And the CTF ends! 
+![image](https://user-images.githubusercontent.com/68239030/216283511-0308e554-5d6c-4cae-9ba6-2baae8492f60.png)
 
