@@ -71,7 +71,7 @@ Using **sherlock** we can find the social media to that username
 We see different social site in which **twitter** is the what we are after.
 ![image](https://user-images.githubusercontent.com/68239030/216248994-57dc327f-0ade-4608-aa08-2ede62e863d8.png)
 
-There is a random text i.e  c2hyZXN0aGExMjM0NW5ha2FsaQ==  , When enterd in [CyberChef](https://gchq.github.io/CyberChef/) spits out **shrestha12345nakali**.
+There is a random text i.e  **c2hyZXN0aGExMjM0NW5ha2FsaQ==**  , When enterd in [CyberChef](https://gchq.github.io/CyberChef/) spits out **shrestha12345nakali**.
 This username is again entered in sherlock and a list is shown in which **Houzz** is only valid.
 ![image](https://user-images.githubusercontent.com/68239030/216250230-e3387621-c9e2-45e6-acb3-dd8bde2344d2.png)
 
@@ -100,7 +100,7 @@ To change the user agent :
 
 >https://swapnilshrestha.com.np/5/htmlcomment/steg/welldone/sherlock101/james_bond/glocation
 
-### Q7) What was the passphrase of the website? 
+### Q8) What was the passphrase of the website? 
 ### Ans: client-site is fun
 We see the next phase of the CTF as a Client-Side Authentication.
 ![image](https://user-images.githubusercontent.com/68239030/216253489-029f7332-cef5-4237-989d-6c2269dba35d.png)
@@ -109,4 +109,22 @@ When we try to login with a random password we see the username is **admin**. ![
 
 but username: admin password: admin doesnt work. 
 When we inspect the page we can see that the browser is verifying the authentaction process and its using user's entered password with **Y2xpZW50LXNpdGUgaXMgZnVu** to check it
+**Y2xpZW50LXNpdGUgaXMgZnVu**  When enterd in [CyberChef](https://gchq.github.io/CyberChef/) spits out **client-site is fun**
+![image](https://user-images.githubusercontent.com/68239030/216258456-86f582fc-f790-4eca-be1f-682a22bbb12a.png)
+
+
+### Q9)  What was the name of the file where you found first half of the next directory?
+### Ans: robots.txt
+![image](https://user-images.githubusercontent.com/68239030/216258952-eee16d63-c1b9-4036-9b5a-fb4e8010e73d.png)
+
+If we click on the icon we go the [Site](https://www.youtube.com/watch?v=dQw4w9WgXcQ) and get Rickrolled!
+Its a page where its talks about **robots.txt** and going to the robots file of the page leads to first half of the final directory: 
+![image](https://user-images.githubusercontent.com/68239030/216259798-b7c68b4f-a6c3-4499-bee8-dfdfc0762399.png)
+
+### Q10)  The final directory was?
+### Ans: robots_and_caesar_cipher
+
+The first part of the final directory was found in Question 9 and for the last part we need to rotate **gtj_igkygx_iovnkx** on [caesar cipher](https://www.dcode.fr/caesar-cipher) and we get the final part of the directory "and_caesar_cipher".
+so the final directory is: [Here](https://swapnilshrestha.com.np/5/htmlcomment/steg/welldone/sherlock101/james_bond/glocation/client-site_is_fun/robots_and_caesar_cipher)
+![image](https://user-images.githubusercontent.com/68239030/216261104-76417e76-e3d4-48d2-9e1b-25e0ccdd34fc.png)
 
