@@ -78,4 +78,35 @@ This username is again entered in sherlock and a list is shown in which **Houzz*
 There is a ideabook called flag and the next directory is **sherlock101**
 >https://swapnilshrestha.com.np/5/htmlcomment/steg/welldone/sherlock101
 
+### Q6) What did you change to go the the directory /james_bond ?
+### Ans: user-agent
+
+![image](https://user-images.githubusercontent.com/68239030/216251143-7dc4c056-4c09-481e-a42c-4e5a6103c3ce.png)
+
+Here we need to change the user-agent as in the image we can see only **Nakali_Shrestha** can access the next page
+To change the user agent : 
+1) Right Click Anywhere in Webpage > Inspect. Alternatively, you can use CTR+Shift+I on Windows, Cmd + Opt +J on Mac.
+2) Choose More Tools > Network Conditions. ...
+3) Uncheck Select Automatically Checkbox.
+4) Use custom user-agent, Nakali_Shrestha
+
+![image](https://user-images.githubusercontent.com/68239030/216252594-59afa70a-f4d2-4090-9ad9-143d5834c34c.png)
+
+5)Enter the url with costum user-agent : https://swapnilshrestha.com.np/5/htmlcomment/steg/welldone/sherlock101/james_bond
+
+
+### Q7) Which was the application to view the link (not the QR) ?
+### Ans: google maps
+
+>https://swapnilshrestha.com.np/5/htmlcomment/steg/welldone/sherlock101/james_bond/glocation
+
+### Q7) What was the passphrase of the website? 
+### Ans: client-site is fun
+We see the next phase of the CTF as a Client-Side Authentication.
+![image](https://user-images.githubusercontent.com/68239030/216253489-029f7332-cef5-4237-989d-6c2269dba35d.png)
+
+When we try to login with a random password we see the username is **admin**. ![image](https://user-images.githubusercontent.com/68239030/216253694-dc8475e8-7a78-4739-997c-768756aae450.png)
+
+but username: admin password: admin doesnt work. 
+When we inspect the page we can see that the browser is verifying the authentaction process and its using user's entered password with **Y2xpZW50LXNpdGUgaXMgZnVu** to check it
 
