@@ -1,23 +1,30 @@
 URL to join the CTF: https://tryhackme.com/jr/haribahadur and can submit flags. 
+
 The CTF is actually situated on https://haridai.sushilphuyal.com.np/
 
 
 ![image](https://user-images.githubusercontent.com/68239030/200747342-37e7e3a5-bbd3-4350-8804-7128abf896ad.png)
+
 Step 1: Download the files and move it to kali.
 Now we need try to get more information on hari.gif using exiftool.
 Command: exiftool hari.gif  
 ![image](https://user-images.githubusercontent.com/68239030/200747436-5bbfbcf2-f247-4036-bd71-5a09bd73e9ad.png)
+
 After running the command we see that 1337haribahadur is the handle of the Author, to find the users social we use the tool SHERLOCK to identify on which social media site the username is registered on.
 Command : python3 sherlock 1337haribahadur --timeout 1
 ![image](https://user-images.githubusercontent.com/68239030/200747624-50fe4b5f-102f-4c93-b210-e26c63f9a4c1.png)
+
 Going through the websites above, only valid account is of Pintrest
 ![image](https://user-images.githubusercontent.com/68239030/200747660-3fdade74-1c46-4eee-933b-c7689b21c5b2.png)
+
 In the profile we can see the URL of the CTF: GitHub - 1337mickey/oh-ho
 We are welcomed with the GitHub page, after downloading the README.md file when we try to edit it we get the following things:
 ![image](https://user-images.githubusercontent.com/68239030/200747904-730f4d8e-ef83-446d-98ac-cefa89c4d946.png)
+
 We find that <span style="color:1337madanbahad1 has some social media"></span>   In addition to the readme file . Color:13377…. Isn’t a real color so,
 Let’s find what 1337madanbahad1 means with the help of Sherlock 
 ![image](https://user-images.githubusercontent.com/68239030/200747932-2f68f1c5-a281-439a-a423-2f8dbb8493b7.png)
+
 Among the results twitter account seems to have an account which has multiple tweets on April 04
 The tweets are:
 1.	unko ghar kathmandu ho hai
@@ -33,6 +40,7 @@ What is BSSID?
  Ans: BSSID stands for Basic Service Set Identifier, and it’s the MAC physical address of the access point or wireless router that is used to connect to the Wi-Fi.
 When we search the BSSID 20:57:AF:3E:BF:90 on wiggle we get the following results:
 ![image](https://user-images.githubusercontent.com/68239030/200748018-17dcc9c6-090d-4233-84f0-e69f35045838.png)
+
 ![image](https://user-images.githubusercontent.com/68239030/200748042-837fe170-c91d-4bae-b9fb-40de3c422e4c.png)
 
 After that we know from tweet no.2 we got that the next directory is Pratikxya, but what is the main domain where /pratikxya is located ?
@@ -40,18 +48,23 @@ For that we need to again analysis the  EH_Assignment1.pdf  file.
 After installing and running the pdfxplx through GitHub we get the following result
 ![image](https://user-images.githubusercontent.com/68239030/200748095-c26dc33c-5435-429c-88dc-9574cf7211b5.png)
 
+
 Through link 1 we found the main domain of the puzzle. i.e  https://haridai.sushilphuyal.com.np/
 ![image](https://user-images.githubusercontent.com/68239030/200748179-12ba694f-19f6-42fd-875b-ce6d436b00b8.png)
+
 Now we found that the address is https://haridai.sushilphuyal.com.np/Pratikxya 
 When we go the site and play around, after a while we find the right click is disabled.  Why is that?
 ![image](https://user-images.githubusercontent.com/68239030/200748205-45e6949a-cc19-49e3-85e4-cb36c314ebf6.png)
+
 To view the source code we have many options.
 1)	press CTRL+SHIFT+I ( which also seems disabled)
 2)	click on the 3 bars on the right of the Firefox application and navigate to more tools>web developer options
 3)	Type view-source:URL to view the source code of the website.
 (view-source:https://haridai.sushilphuyal.com.np/Pratikxya/)
 ![image](https://user-images.githubusercontent.com/68239030/200748243-a79070e7-d187-4664-ab97-2c27b52f0c11.png)
+
 ![image](https://user-images.githubusercontent.com/68239030/200748263-9f500f7c-da51-4c43-9b8b-00286c37a562.png)
+
 We can see that there are some numbers and a comment in the source code i.e (alhabet=a-z  hint: left or right then xeh it). Which is HEX in reverse? 
 After that value we got lets decode it using cyber chef.
 Indeed it’s a HEX value.
@@ -60,11 +73,13 @@ Which leads to **tlyvahohzhpyhtyv** . This looks like a cipher text.
 After going to https://www.dcode.fr we found that the hidden code is "**merotahasairamro**"
 
 ![image](https://user-images.githubusercontent.com/68239030/200748441-95f50657-1c2c-4d9d-8579-637f605c1675.png)
+
 Therefore the other directory is “**merotahasairamro**”
 
 After finding the new directory: https://haridai.sushilphuyal.com.np/Pratikxya/merotahasairamro/
 We can see the same properties of the page are same as other pages and we can use view-source: to see the hidden contents:
 ![image](https://user-images.githubusercontent.com/68239030/200748545-9508ce9a-7b14-4683-9f4d-89b25ab4adc0.png)
+
 We got a random number 9006AE0503F215E1886570817A4A379A and a hit which says that the hash name starts from N.
 What is a hash or a hash value?
 Ans : A hash value (or simply hash), also called a message digest, is a number generated from a string of text. The hash is substantially smaller than the text itself, and is generated by a formula in such a way that it is extremely unlikely that some other text will produce the same hash value.
@@ -72,9 +87,12 @@ After going to the website https://www.onlinehashcrack.com
 we see that one ALGORITHM that starts with N. i.e NTML let’s try that
 ![image](https://user-images.githubusercontent.com/68239030/200748659-78f4e68a-52db-4009-bd79-1d6012a8ed88.png)
 
+
 Or let’s go to https://crackstation.net and try to find hash.
 ![image](https://user-images.githubusercontent.com/68239030/200748708-324fa5ef-ec3a-4919-b213-6d92648cee31.png)
+
 And it worked!
+
 Hash                            	Type  Result
 9006AE0503F215E1886570817A4A379A	NTLM	blue97
 
@@ -88,6 +106,7 @@ When we cut the sound and upload it to audio decoder > Morse Decoder we get nama
 Again adding Namaste to the link leads us to : 
 https://haridai.sushilphuyal.com.np/Pratikxya/merotahasairamro/blue97/namaste
 ![image](https://user-images.githubusercontent.com/68239030/200748864-04c5b693-7fb9-4381-8de2-bab955c0d00f.png)
+
 Which I turned on my dark mode and saw “the next path format YYYY-YYYY” we can also see it through Command: view-source: URL
 
 ![image](https://user-images.githubusercontent.com/68239030/200748937-3a58f329-ded0-4262-8968-3f9443bf3148.png)
