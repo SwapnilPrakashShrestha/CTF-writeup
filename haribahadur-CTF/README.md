@@ -1,3 +1,7 @@
+URL to join the CTF: https://tryhackme.com/jr/haribahadur and can submit flags. 
+The CTF is actually situated on https://haridai.sushilphuyal.com.np/
+
+
 ![image](https://user-images.githubusercontent.com/68239030/200747342-37e7e3a5-bbd3-4350-8804-7128abf896ad.png)
 Step 1: Download the files and move it to kali.
 Now we need try to get more information on hari.gif using exiftool.
