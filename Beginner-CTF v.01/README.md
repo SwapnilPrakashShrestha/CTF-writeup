@@ -43,7 +43,7 @@ The next page gives us a image and is about steganography. After downloading the
 
 >wget https://swapnilshrestha.com.np/5/htmlcomment/steganographhy.jpeg
 >
-> steghide --extract -df steganograpgy.jpeg
+> steghide --extract -sf steganograpgy.jpeg
 > 
 > ls
 > 
